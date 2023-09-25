@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="543.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.RegisterPage">
+   <children>
+      <Text layoutX="25.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Form" wrappingWidth="329.341796875">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="82.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please work for the love of god">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="26.0" layoutY="117.0" prefHeight="25.0" prefWidth="237.0" promptText="Name" />
+      <TextField fx:id="surname" layoutX="26.0" layoutY="169.0" prefHeight="25.0" prefWidth="237.0" promptText="Surname" />
+      <Text layoutX="26.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
+      <Text layoutX="27.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+      <Text layoutX="27.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address" />
+      <TextField fx:id="email" layoutX="26.0" layoutY="221.0" prefHeight="25.0" prefWidth="237.0" promptText="email@gmail.com" />
+      <TextField fx:id="login" layoutX="26.0" layoutY="286.0" prefHeight="25.0" prefWidth="237.0" promptText="Username" />
+      <Button layoutX="144.0" layoutY="482.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="91.0" text="Cancel" />
+      <Button layoutX="114.0" layoutY="432.0" mnemonicParsing="false" onAction="#submit" prefHeight="32.0" prefWidth="146.0" text="Submit Application" />
+      <PasswordField fx:id="password" layoutX="26.0" layoutY="336.0" prefHeight="25.0" prefWidth="237.0" promptText="Password" />
+      <PasswordField fx:id="repeatPassword" layoutX="26.0" layoutY="385.0" prefHeight="25.0" prefWidth="237.0" promptText="Repeat Password" />
+      <Text layoutX="27.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login name" />
+      <Text layoutX="27.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text layoutX="27.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat password" />
+   </children>
+</AnchorPane>
