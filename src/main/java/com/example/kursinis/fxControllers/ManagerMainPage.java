@@ -27,7 +27,7 @@ public class ManagerMainPage {
     }
 
     public void openForum(ActionEvent actionEvent) {
-        FxUtils.openFxPage("forum-page-managers.fxml", redirect);
+        FxUtils.openFxPage("trip-page.fxml.fxml", redirect);
     }
 
     public void logOut(ActionEvent actionEvent) {

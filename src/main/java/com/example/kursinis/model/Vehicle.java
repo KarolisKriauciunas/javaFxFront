@@ -18,7 +18,7 @@ public class Vehicle {
     private String manufacturer;
     private Long vehicleID;
     private String creationYear;
-    private Float Value;
+    private String Value;
     private Long completedTrips;
     private VehicleType type;
     private String lastService;

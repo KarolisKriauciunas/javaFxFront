@@ -7,6 +7,7 @@ module com.example.kursinis {
     requires java.net.http;
     requires javaee.api;
     requires com.fasterxml.jackson.databind;
+    requires javafx.graphics;
 
     exports com.example.kursinis.model.Account to com.fasterxml.jackson.databind;
     exports com.example.kursinis.model.Trip to com.fasterxml.jackson.databind;

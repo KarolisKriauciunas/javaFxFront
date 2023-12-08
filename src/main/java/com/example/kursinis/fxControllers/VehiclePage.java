@@ -22,11 +22,11 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class VehiclePage implements Initializable {
-    public TableColumn<Vehicle, Long> EmployeeId;
+    //public TableColumn<Vehicle, Long> EmployeeId;
     public TableColumn<Vehicle, String> manufacturer;
-    public TableColumn<Vehicle, VehicleType> type;
-    public TableColumn<Vehicle, Float> value;
-    public TableColumn<Vehicle, Long> vID;
+   // public TableColumn<Vehicle, VehicleType> type;
+    public TableColumn<Vehicle, String> value;
+  //  public TableColumn<Vehicle, Long> vID;
     public ObservableList<String> statusChoices = FXCollections.observableArrayList("TRUCK", "VAN", "PICKUP", "SEDAN");
     public TableView<Vehicle> vehicleTableView;
     public ChoiceBox<String> types;
@@ -50,11 +50,11 @@ public class VehiclePage implements Initializable {
     }
 
     public void fillTable() {
-        EmployeeId.setCellValueFactory(new PropertyValueFactory<>("assignedId"));
+        //EmployeeId.setCellValueFactory(new PropertyValueFactory<>("assignedId"));
         manufacturer.setCellValueFactory(new PropertyValueFactory<>("manufacturer"));
-        type.setCellValueFactory(new PropertyValueFactory<>("type"));
+      //  type.setCellValueFactory(new PropertyValueFactory<>("type"));
         value.setCellValueFactory(new PropertyValueFactory<>("Value"));
-        vID.setCellValueFactory(new PropertyValueFactory<>("vehicleID"));
+      //  vID.setCellValueFactory(new PropertyValueFactory<>("vehicleID"));
         vehicleTableView.getItems().setAll(vehicles);
     }
 
@@ -72,7 +72,7 @@ public class VehiclePage implements Initializable {
     {
         JSONObject json = new JSONObject();
         json.put("manufacturer", manField.getText());
-        json.put("creationYear", yearField.getText());
+        json.put("creationYear", "1999-12-12");
         json.put("value", valueField.getText());
         json.put("type", types.getValue());
         json.put("assignedId", LoginPage.session.getEmployeeID());

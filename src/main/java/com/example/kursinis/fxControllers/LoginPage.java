@@ -24,6 +24,7 @@ public class LoginPage {
         if (!loginField.getText().isBlank() || !passwordField.getText().isBlank()) {
 
             String loginResponse = CallEndpoints.Get("http://localhost:8080/login?userName=" + loginField.getText() + "&password=" + passwordField.getText());
+
             if (succesfulLogin(loginResponse)) {
                 session = mapper.readValue(loginResponse,Session.class);
                 launchAccountOverview(session);
