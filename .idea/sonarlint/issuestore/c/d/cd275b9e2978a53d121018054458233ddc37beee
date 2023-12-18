@@ -1,0 +1,74 @@
+
+J
+java:S3740J"/Provide the parametrized type for this generic.(ÌàÒÃÿÿÿÿÿ
+J
+java:S3740J"/Provide the parametrized type for this generic.(ÌàÒÃÿÿÿÿÿ
+E
+java:S3740O"/Provide the parametrized type for this generic.(ññ¡†
+E
+java:S3740W"/Provide the parametrized type for this generic.(šìÊÈ
+J
+java:S3740\"/Provide the parametrized type for this generic.(‹³©Ûúÿÿÿÿ
+^
+java:S1192r"HDefine a constant instead of duplicating this literal "Success" 3 times.(„‹â
+h
+java:S1192r"RDefine a constant instead of duplicating this literal "Creation complete" 3 times.(„‹â
+c
+java:S1192|"HDefine a constant instead of duplicating this literal "replyId" 3 times.(öŞÓèûÿÿÿÿ
+i
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(³°ºµøÿÿÿÿ
+k
+java:S1104"UMake forumName a static final constant or non-public and provide accessors if needed.(ã¥à†
+m
+java:S1104"RMake access a static final constant or non-public and provide accessors if needed.(æ–Àÿúÿÿÿÿ
+q
+java:S1104"VMake forumTable a static final constant or non-public and provide accessors if needed.(úûÏÿÿÿÿÿ
+i
+java:S1104 "SMake idField a static final constant or non-public and provide accessors if needed.(¦õ¾Û
+s
+java:S1104!"XMake commentField a static final constant or non-public and provide accessors if needed.(¦¶µ üÿÿÿÿ
+p
+java:S1104""UMake idComment a static final constant or non-public and provide accessors if needed.(Æ©Ïáøÿÿÿÿ
+p
+java:S1104#"UMake nameField a static final constant or non-public and provide accessors if needed.(¾Àˆÿÿÿÿÿ
+m
+java:S1104$"RMake mapper a static final constant or non-public and provide accessors if needed.(æØ²Şüÿÿÿÿ
+m
+java:S1104%"RMake forums a static final constant or non-public and provide accessors if needed.(º¹ˆüÿÿÿÿ
+o
+java:S1104&"TMake comments a static final constant or non-public and provide accessors if needed.(ÇšÒ¯úÿÿÿÿ
+>
+java:S5411P"(Use a primitive boolean expression here.(ÎÏ·ƒ
+C
+java:S5411^"(Use a primitive boolean expression here.(½ê‚ıÿÿÿÿ
+W
+java:S4973Y"<Strings and Boxed types should be compared using "equals()".(¾Ü‡Âüÿÿÿÿ
+R
+java:S4973g"<Strings and Boxed types should be compared using "equals()".(è¿˜ç
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğ—ÂÂşÿÿÿÿ
+e
+java:S3973Œ"IUse indentation to denote the code conditionally executed by this "else".(„¶áìøÿÿÿÿ
+
+java:S2681"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(¿©ÑÙ
+Q
+java:S11178"<Rename "response" which hides the field declared at line 39.(Ô¤äf
+M
+java:S1172j"2Remove this unused method parameter "actionEvent".(Æ‹èÎüÿÿÿÿ
+M
+java:S1172w"2Remove this unused method parameter "actionEvent".(—¤ßşùÿÿÿÿ
+@	java:S106}"+Replace this use of System.out by a logger.(¿©ÑÙ
+E	java:S106~"+Replace this use of System.out by a logger.(¬õÑúÿÿÿÿ
+I
+java:S1172…"2Remove this unused method parameter "actionEvent".(¡èè¸
+A	java:S106"+Replace this use of System.out by a logger.(¿©ÑÙ
+F	java:S106"+Replace this use of System.out by a logger.(¬õÑúÿÿÿÿ
+W
+java:S1854˜";Remove this useless assignment to local variable "comment".(ˆóªşÿÿÿÿ
+N
+java:S1172—"2Remove this unused method parameter "actionEvent".(ÊÀÁ«øÿÿÿÿ
+F
+java:S1905˜"*Remove this unnecessary cast to "Comment".(ˆóªşÿÿÿÿ
+H
+java:S1481˜",Remove this unused "comment" local variable.(ˆóªşÿÿÿÿ
+I
+java:S1172š"2Remove this unused method parameter "actionEvent".(˜ùü¶

@@ -47,6 +47,19 @@ public class TripPage implements Initializable {
     public ObjectMapper mapper = new ObjectMapper();
     public Cargo selectedCargo;
     public List<DtoUser> users;
+    public TableColumn CityColumn;
+    public TableColumn StatusCollumn;
+    public TableColumn AddressCollumn;
+    public TableColumn CreatedAtCollumn;
+    public TableColumn PriceCollumn;
+    public TableColumn CityColumn1;
+    public TableColumn PriceCollumn1;
+    public TableColumn AddressColumn1;
+    public ChoiceBox carChoice;
+    public TableView cargoList1;
+    public TableColumn StatusColumn11;
+    public TableColumn AddressCollumn11;
+    public TableColumn PriceColumn11;
 
 
     public void fillTripList() {
@@ -112,7 +125,7 @@ public class TripPage implements Initializable {
     }
 
     public void goBack(ActionEvent actionEvent) {
-        FxUtils.openFxPage("manager-main-page.fxml", destiantionField);
+        FxUtils.openFxPage("main-page.fxml", destiantionField);
     }
     public void selectCargo(MouseEvent event) {
         selectedCargo = (Cargo) cargoList.getSelectionModel().getSelectedItem();
@@ -130,8 +143,13 @@ public class TripPage implements Initializable {
             driverChoice.getItems().add(user);
         }
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(ParcelApplication.class.getResource("trip-page.fxml"));
+        fxmlLoader.setLocation(ParcelApplication.class.getResource("reservations-page.fxml"));
     }
 
 
+    public void submitReservation(ActionEvent actionEvent) {
+    }
+
+    public void cancelReservation(ActionEvent actionEvent) {
+    }
 }

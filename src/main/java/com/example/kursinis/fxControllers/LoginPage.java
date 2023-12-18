@@ -1,6 +1,6 @@
 package com.example.kursinis.fxControllers;
 
-import com.example.kursinis.model.Account.AccountType;
+import  com.example.kursinis.model.Account.AccountType;
 import com.example.kursinis.model.Session;
 
 import com.example.kursinis.utilities.CallEndpoints;
@@ -42,9 +42,9 @@ public class LoginPage {
     }
 
     public void launchAccountOverview(Session session) {
-        if (session.getType() == AccountType.MANAGER || session.getType() == AccountType.ADMIN) FxUtils.openFxPage("manager-main-page.fxml", loginField);
+        if (session.getType() == AccountType.MANAGER || session.getType() == AccountType.ADMIN) FxUtils.openFxPage("main-page.fxml", loginField);
         else {
-            FxUtils.openFxPage("user-main-page.fxml", loginField);
+            FxUtils.openFxPage("main-page.fxml", loginField);
         }
     }
 

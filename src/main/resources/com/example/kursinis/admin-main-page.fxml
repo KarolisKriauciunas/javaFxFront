@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="328.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.AdminMainPage">
+    <children>
+        <Button layoutX="62.0" layoutY="66.0" mnemonicParsing="false" onAction="#editReservations" prefHeight="30.0" prefWidth="174.0" text="Edit Reservations" textFill="RED">
+            <font>
+                <Font name="Arial Bold" size="16.0" />
+            </font></Button>
+        <Button layoutX="89.0" layoutY="255.0" mnemonicParsing="false" onAction="#logOut" prefHeight="30.0" prefWidth="120.0" text="Log out" />
+        <Text layoutX="67.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ReserveIT" textAlignment="CENTER" wrappingWidth="164.0">
+            <font>
+                <Font size="33.0" />
+            </font></Text>
+      <Button layoutX="62.0" layoutY="114.0" mnemonicParsing="false" onAction="#editUsers" prefHeight="30.0" prefWidth="174.0" text="Edit Users" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="62.0" layoutY="164.0" mnemonicParsing="false" onAction="#editParkingLots" prefHeight="30.0" prefWidth="174.0" text="Edit Parking Lots" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

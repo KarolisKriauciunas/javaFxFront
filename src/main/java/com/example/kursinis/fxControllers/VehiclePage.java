@@ -91,6 +91,6 @@ public class VehiclePage implements Initializable {
         fillTable();
     }
     public void goBack(ActionEvent actionEvent) {
-        FxUtils.openFxPage("manager-main-page.fxml",manField);
+        FxUtils.openFxPage("main-page.fxml",manField);
     }
 }

@@ -1,0 +1,40 @@
+
+L
+java:S3740
+"/Provide the parametrized type for this generic.(ÔÄÌ³8µ¾üòÇ1
+L
+java:S3740"/Provide the parametrized type for this generic.(¦µ¬ß8õïüòÇ1
+L
+java:S3740"/Provide the parametrized type for this generic.(ÛõÜ´8¯‘ıòÇ1
+L
+java:S3740"/Provide the parametrized type for this generic.(„¥Ÿ‰8ˆ®ıòÇ1
+r
+java:S1104
+"UMake tripTable a static final constant or non-public and provide accessors if needed.(ÔÄÌ³8¶¾üòÇ1
+t
+java:S1104"WMake destination a static final constant or non-public and provide accessors if needed.(¦µ¬ß8õïüòÇ1
+u
+java:S1104"XMake deliveryDate a static final constant or non-public and provide accessors if needed.(ÛõÜ´8°‘ıòÇ1
+o
+java:S1104"RMake status a static final constant or non-public and provide accessors if needed.(„¥Ÿ‰8‰®ıòÇ1
+p
+java:S1104"SMake idField a static final constant or non-public and provide accessors if needed.(¦õ¾Û8œûıòÇ1
+~
+java:S1104"\Make destinationField a static final constant or non-public and provide accessors if needed.(áºœÂúÿÿÿÿ8¯¡şòÇ1
+{
+java:S1104"YMake deliveryField a static final constant or non-public and provide accessors if needed.(—·²Âúÿÿÿÿ8´ÄşòÇ1
+y
+java:S1104"WMake statusField a static final constant or non-public and provide accessors if needed.(Ê•öˆÿÿÿÿÿ8éşòÇ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğ—ÂÂşÿÿÿÿ8—µúòÇ1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼Œµ©8òÌıòÇ1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯”…£üÿÿÿÿ8„ÿòÇ1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(èåƒ¯øÿÿÿÿ8¨½€óÇ1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(êîÁùÿÿÿÿ8Äë€óÇ1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ïâq8õ™óÇ1
+£
+java:S1186""€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‡Âìåøÿÿÿÿ8ãÄóÇ1

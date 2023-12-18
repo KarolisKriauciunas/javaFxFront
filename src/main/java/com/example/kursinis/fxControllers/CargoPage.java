@@ -52,7 +52,7 @@ public class CargoPage implements Initializable {
     }
 
     public void goBack(ActionEvent actionEvent) {
-        FxUtils.openFxPage("manager-main-page.fxml", submitValue);
+        FxUtils.openFxPage("main-page.fxml", submitValue);
     }
 
     public void getInitialCargo() {

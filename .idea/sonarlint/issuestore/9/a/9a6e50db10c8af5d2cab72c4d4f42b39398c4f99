@@ -1,0 +1,136 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(£ø±ëûÿÿÿÿ
+J
+java:S3740'"/Provide the parametrized type for this generic.(ş‘á¢ûÿÿÿÿ
+L
+java:S37402"/Provide the parametrized type for this generic.(ƒ¦œÇ8›ñóÇ1
+Q
+java:S37403"/Provide the parametrized type for this generic.(÷¶øßûÿÿÿÿ8ÍòóÇ1
+L
+java:S37404"/Provide the parametrized type for this generic.(ıØáè8úùòóÇ1
+Q
+java:S37405"/Provide the parametrized type for this generic.(ñíöİûÿÿÿÿ8ô¬óóÇ1
+Q
+java:S37406"/Provide the parametrized type for this generic.(€‹åèøÿÿÿÿ8Ë¯ôóÇ1
+Q
+java:S37407"/Provide the parametrized type for this generic.(î«Šöûÿÿÿÿ8ÍÜôóÇ1
+L
+java:S37408"/Provide the parametrized type for this generic.(êßÇ8½¬õóÇ1
+L
+java:S37409"/Provide the parametrized type for this generic.(±­Á”8ĞÇõóÇ1
+L
+java:S3740:"/Provide the parametrized type for this generic.(ƒÊöé8š®öóÇ1
+Q
+java:S3740;"/Provide the parametrized type for this generic.(õ­â®şÿÿÿÿ8äİöóÇ1
+L
+java:S3740<"/Provide the parametrized type for this generic.(­ƒÈô8Üˆ÷óÇ1
+L
+java:S3740="/Provide the parametrized type for this generic.(±¹¨8ú¸÷óÇ1
+Q
+java:S3740>"/Provide the parametrized type for this generic.(üƒôØşÿÿÿÿ8çøóÇ1
+o
+java:S1104"TMake tripList a static final constant or non-public and provide accessors if needed.(£ø±ëûÿÿÿÿ
+y
+java:S1104"^Make DestinationCollumn a static final constant or non-public and provide accessors if needed.(£Ò”ûşÿÿÿÿ
+t
+java:S1104"YMake StartDCollumn a static final constant or non-public and provide accessors if needed.(ô‚¥±øÿÿÿÿ
+m
+java:S1104 "WMake EndDCollumn a static final constant or non-public and provide accessors if needed.(Û°ƒé
+t
+java:S1104!"YMake statusCollumn a static final constant or non-public and provide accessors if needed.(á÷ûÿÿÿÿ
+n
+java:S1104""XMake MerchCollumn a static final constant or non-public and provide accessors if needed.(‹¨ó
+o
+java:S1104#"YMake DriverCollumn a static final constant or non-public and provide accessors if needed.(ÿÒæ¶
+p
+java:S1104$"UMake idCollumn a static final constant or non-public and provide accessors if needed.(Õ¾“¢üÿÿÿÿ
+h
+java:S1104%"RMake cargos a static final constant or non-public and provide accessors if needed.(½Üéû
+l
+java:S1104&"QMake trips a static final constant or non-public and provide accessors if needed.(İÊôµüÿÿÿÿ
+p
+java:S1104'"UMake cargoList a static final constant or non-public and provide accessors if needed.(ş‘á¢ûÿÿÿÿ
+l
+java:S1104("VMake CIdCollumn a static final constant or non-public and provide accessors if needed.(Ë³Æñ
+u
+java:S1104)"_Make CDescriptionCollumn a static final constant or non-public and provide accessors if needed.(™–Û
+o
+java:S1104*"YMake CValueCollumn a static final constant or non-public and provide accessors if needed.(õúª¤
+u
+java:S1104+"ZMake StartDateField a static final constant or non-public and provide accessors if needed.(²êªŸşÿÿÿÿ
+p
+java:S1104,"UMake endDField a static final constant or non-public and provide accessors if needed.(¢ÜÍ½üÿÿÿÿ
+s
+java:S1104-"XMake driverChoice a static final constant or non-public and provide accessors if needed.(©÷èÀøÿÿÿÿ
+r
+java:S1104."\Make destiantionField a static final constant or non-public and provide accessors if needed.(ÿ¤Íı
+m
+java:S1104/"RMake mapper a static final constant or non-public and provide accessors if needed.(æØ²Şüÿÿÿÿ
+o
+java:S11040"YMake selectedCargo a static final constant or non-public and provide accessors if needed.(šÒˆÜ
+g
+java:S11041"QMake users a static final constant or non-public and provide accessors if needed.(¯Á’È
+s
+java:S11042"VMake CityColumn a static final constant or non-public and provide accessors if needed.(ƒ¦œÇ8“›ñóÇ1
+{
+java:S11043"YMake StatusCollumn a static final constant or non-public and provide accessors if needed.(÷¶øßûÿÿÿÿ8¡ÍòóÇ1
+w
+java:S11044"ZMake AddressCollumn a static final constant or non-public and provide accessors if needed.(ıØáè8üùòóÇ1
+~
+java:S11045"\Make CreatedAtCollumn a static final constant or non-public and provide accessors if needed.(ñíöİûÿÿÿÿ8ö¬óóÇ1
+z
+java:S11046"XMake PriceCollumn a static final constant or non-public and provide accessors if needed.(€‹åèøÿÿÿÿ8Í¯ôóÇ1
+y
+java:S11047"WMake CityColumn1 a static final constant or non-public and provide accessors if needed.(î«Šöûÿÿÿÿ8ÏÜôóÇ1
+v
+java:S11048"YMake PriceCollumn1 a static final constant or non-public and provide accessors if needed.(êßÇ8¾¬õóÇ1
+w
+java:S11049"ZMake AddressColumn1 a static final constant or non-public and provide accessors if needed.(±­Á”8ÒÇõóÇ1
+r
+java:S1104:"UMake carChoice a static final constant or non-public and provide accessors if needed.(ƒÊöé8®öóÇ1
+x
+java:S1104;"VMake cargoList1 a static final constant or non-public and provide accessors if needed.(õ­â®şÿÿÿÿ8æİöóÇ1
+w
+java:S1104<"ZMake StatusColumn11 a static final constant or non-public and provide accessors if needed.(­ƒÈô8İˆ÷óÇ1
+y
+java:S1104="\Make AddressCollumn11 a static final constant or non-public and provide accessors if needed.(±¹¨8ü¸÷óÇ1
+{
+java:S1104>"YMake PriceColumn11 a static final constant or non-public and provide accessors if needed.(üƒôØşÿÿÿÿ8éøóÇ1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğ—ÂÂşÿÿÿÿ
+^
+java:S3973"GUse indentation to denote the code conditionally executed by this "if".(¯šÛ
+w	java:S116"]Rename this field "DestinationCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Ò”ûşÿÿÿÿ
+r	java:S116"XRename this field "StartDCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô‚¥±øÿÿÿÿ
+k	java:S116 "VRename this field "EndDCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û°ƒé
+l	java:S116""WRename this field "MerchCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹¨ó
+m	java:S116#"XRename this field "DriverCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÒæ¶
+j	java:S116("URename this field "CIdCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë³Æñ
+s	java:S116)"^Rename this field "CDescriptionCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™–Û
+m	java:S116*"XRename this field "CValueCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õúª¤
+s	java:S116+"YRename this field "StartDateField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²êªŸşÿÿÿÿ
+q	java:S1162"URename this field "CityColumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ¦œÇ8Á›ñóÇ1
+y	java:S1163"XRename this field "StatusCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¶øßûÿÿÿÿ8ÁÍòóÇ1
+u	java:S1164"YRename this field "AddressCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıØáè8–úòóÇ1
+|	java:S1165"[Rename this field "CreatedAtCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñíöİûÿÿÿÿ8­óóÇ1
+x	java:S1166"WRename this field "PriceCollumn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€‹åèøÿÿÿÿ8õ¯ôóÇ1
+w	java:S1167"VRename this field "CityColumn1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î«Šöûÿÿÿÿ8çÜôóÇ1
+t	java:S1168"XRename this field "PriceCollumn1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êßÇ8Ô¬õóÇ1
+u	java:S1169"YRename this field "AddressColumn1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±­Á”8æÇõóÇ1
+u	java:S116<"YRename this field "StatusColumn11" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ƒÈô8ñˆ÷óÇ1
+w	java:S116="[Rename this field "AddressCollumn11" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¹¨8“¹÷óÇ1
+y	java:S116>"XRename this field "PriceColumn11" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üƒôØşÿÿÿÿ8ûøóÇ1
+Ÿ
+java:S1186–"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‰ÃÚ¤8›öóÇ1
+¤
+java:S1186™"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦âú³úÿÿÿÿ8ÿ¼øóÇ1
+€
+java:S18453"^Rename field "StatusCollumn" to prevent any misunderstanding/clash with field "statusCollumn".(÷¶øßûÿÿÿÿ8ÁÍòóÇ1
+H
+java:S1172p"2Remove this unused method parameter "actionEvent".(ÏíÎ°
+E	java:S106x"+Replace this use of System.out by a logger.(—ß†ıÿÿÿÿ
+E	java:S106z"+Replace this use of System.out by a logger.(˜Š¿Ûüÿÿÿÿ
+H
+java:S1172"2Remove this unused method parameter "actionEvent".(˜ùü¶
+C
+java:S1172‚",Remove this unused method parameter "event".(æƒş‘
