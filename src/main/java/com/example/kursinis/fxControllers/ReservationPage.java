@@ -42,7 +42,7 @@ public class ReservationPage implements Initializable {
 
     public TableView<ParkingSpace> parkingSpaceList;
     public TableColumn<ParkingSpace, String> psStatusColumn;
-    public TableColumn<ParkingSpace, String> psLocationColumn;
+    public TableColumn<ParkingSpace, String> psNameColumn;
     public TableColumn<ParkingSpace, Float> psPriceColumn;
     public List<ParkingSpace> parkingSpaces;
 
@@ -54,20 +54,19 @@ public class ReservationPage implements Initializable {
     public List<DtoUser> users;
     public ChoiceBox carChoice;
     public Button createReservationButton;
-    public TextField invisable;
-
+    public TextField redirect;
 
 
     public void fillReservationList() {
-        getInitialReservations();
-        rCityColumn.setCellValueFactory(new PropertyValueFactory<>("city"));
-        rStatusColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
-        rAddressColumn.setCellValueFactory(new PropertyValueFactory<>("address"));
-        rStartDColumn.setCellValueFactory(new PropertyValueFactory<>("startDate"));
-        rEndDColumn.setCellValueFactory(new PropertyValueFactory<>("endDate"));
-        rCreatedAtColumn.setCellValueFactory(new PropertyValueFactory<>("createdAt"));
-        rPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
-        reservationList.getItems().setAll(reservations);
+//        getInitialReservations();
+//        rCityColumn.setCellValueFactory(new PropertyValueFactory<>("city"));
+//        rStatusColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
+//        rAddressColumn.setCellValueFactory(new PropertyValueFactory<>("address"));
+//        rStartDColumn.setCellValueFactory(new PropertyValueFactory<>("startDate"));
+//        rEndDColumn.setCellValueFactory(new PropertyValueFactory<>("endDate"));
+//        rCreatedAtColumn.setCellValueFactory(new PropertyValueFactory<>("createdAt"));
+//        rPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
+//        reservationList.getItems().setAll(reservations);
     }
 
     public void fillParkingLotsList() {
@@ -78,14 +77,14 @@ public class ReservationPage implements Initializable {
     }
     public void fillParkingSpaces(Long id) {
         getInitialParkingSpaces(id);
-        psStatusColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
-        psLocationColumn.setCellValueFactory(new PropertyValueFactory<>("location"));
+        //psStatusColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
+        psNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         psPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
         parkingSpaceList.getItems().setAll(parkingSpaces);
     }
 
     public void getInitialParkingLots() {
-        String response = CallEndpoints.Get("http://localhost:8080/api/v1/parkinglot/parkinglots");
+        String response = CallEndpoints.Get("http://localhost:8080/api/v1/parkinglot");
         try {
             parkingLots = Arrays.asList(mapper.readValue(response, ParkingLot[].class));
         } catch (JsonProcessingException e) {
@@ -136,14 +135,14 @@ public class ReservationPage implements Initializable {
 //    }
 
     public void goBack(ActionEvent actionEvent) {
-        FxUtils.openFxPage("main-page.fxml", invisable);
+        FxUtils.openFxPage("main-page.fxml", redirect);
     }
     public void selectCargo(MouseEvent event) {
         selectedCargo = (ParkingLot) parkingLotsList.getSelectionModel().getSelectedItem();
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        getInitialReservations();
+//        getInitialReservations();
         getInitialParkingLots();
 
         fillReservationList();

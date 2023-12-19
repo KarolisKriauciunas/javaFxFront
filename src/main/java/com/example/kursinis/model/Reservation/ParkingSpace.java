@@ -15,10 +15,12 @@ import lombok.NoArgsConstructor;
 public class ParkingSpace {
     @JsonProperty(namespace = "parkingLotId")
     private long parkingLotId;
-    @JsonProperty(namespace = "status")
-    private ReservationStatus status;
-    @JsonProperty(namespace = "location")
-    private String location;
+    @JsonProperty(namespace = "parkingSpaceId")
+    private long parkingSpaceId;
+//    @JsonProperty(namespace = "status")
+//    private ReservationStatus status;
+    @JsonProperty(namespace = "name")
+    private String name;
     @JsonProperty(namespace = "price")
     private float price;
 }

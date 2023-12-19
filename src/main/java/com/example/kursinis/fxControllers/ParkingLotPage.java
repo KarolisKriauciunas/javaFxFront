@@ -96,15 +96,6 @@ public class ParkingLotPage implements Initializable {
         }
     }
 
-    @FXML
-    public void rowClicked(MouseEvent event) {
-        ParkingLot clickedCargo = cargoTable.getSelectionModel().getSelectedItem();
-
-        if (clickedCargo != null) {
-            editValue.setText(clickedCargo.getValue().toString());
-            editDescr.setText(clickedCargo.getDescription());
-        }
-    }
 
 
 }
