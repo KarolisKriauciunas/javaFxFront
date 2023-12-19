@@ -1,5 +1,5 @@
 package com.example.kursinis.model.Reservation;
 
 public enum ReservationStatus {
-    ASSIGNED, IN_PROGRESS, COMPLETED, CANCELED
+    UPCOMING, IN_PROGRESS, COMPLETED, CANCELED
 }
