@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="455.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.MainPage">
+<AnchorPane prefHeight="455.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.MainPage">
    <children>
       <Button layoutX="62.0" layoutY="66.0" mnemonicParsing="false" onAction="#openReservations" prefHeight="30.0" prefWidth="174.0" text="Mano Reservacijos">
          <font>
@@ -22,5 +21,6 @@
             <Font size="33.0" />
          </font></Text>
       <Button layoutX="89.0" layoutY="308.0" mnemonicParsing="false" onAction="#openFAQ" prefHeight="30.0" prefWidth="120.0" text="FAQ" />
+      <TextField fx:id="redirect" layoutX="-149.0" layoutY="14.0" />
    </children>
 </AnchorPane>

@@ -13,13 +13,11 @@
         </columns>
       </TableView>
       <Text layoutX="592.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mašinos modelis" />
-      <TextField fx:id="manField" layoutX="592.0" layoutY="45.0" />
-      <Text layoutX="592.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" />
-      <TextField fx:id="valueField" layoutX="592.0" layoutY="94.0" />
-      <Text layoutX="592.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="type" />
-      <ChoiceBox fx:id="types" layoutX="592.0" layoutY="142.0" prefWidth="150.0" />
-      <Button layoutX="630.0" layoutY="188.0" mnemonicParsing="false" onAction="#submitVehicle" text="Add New" />
-      <TextField fx:id="manField1" layoutX="588.0" layoutY="237.0" visible="false" />
+      <TextField fx:id="carNameField" layoutX="592.0" layoutY="45.0" />
+      <Text layoutX="592.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Plate" />
+      <TextField fx:id="numberPlateField" layoutX="592.0" layoutY="94.0" />
+      <Button layoutX="630.0" layoutY="136.0" mnemonicParsing="false" onAction="#submitVehicle" text="Add New" />
+       <TextField fx:id="manField1" layoutX="588.0" layoutY="237.0" visible="false" />
       <Button layoutX="691.0" layoutY="338.0" mnemonicParsing="false" onAction="#goBack" prefHeight="44.0" prefWidth="66.0" text="Back" />
    </children>
 </AnchorPane>

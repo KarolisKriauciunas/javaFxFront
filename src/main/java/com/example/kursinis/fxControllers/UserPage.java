@@ -81,7 +81,6 @@ public class UserPage implements Initializable {
             firstNameField.setText(clickedUser.getFirstName());
             lastNameField.setText(clickedUser.getLastName());
             emailField.setText(clickedUser.getEmail());
-            salaryField.setText(clickedUser.getSalary().toString());
             positionField.setText(clickedUser.getType().toString());
         }
     }
@@ -103,7 +102,6 @@ public class UserPage implements Initializable {
                 user.setFirstName(firstNameField.getText());
                 user.setLastName(lastNameField.getText());
                 user.setEmail(emailField.getText());
-                user.setSalary(Float.valueOf(salaryField.getText()));
                 user.setType(AccountType.valueOf(positionField.getText()));
 
                 JSONObject json = new JSONObject();
