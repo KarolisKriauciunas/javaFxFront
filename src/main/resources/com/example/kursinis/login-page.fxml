@@ -4,16 +4,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="278.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.LoginPage">
+<AnchorPane prefHeight="312.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.LoginPage">
    <children>
       <TextField fx:id="loginField" layoutX="124.0" layoutY="84.0" promptText="Login name" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="124.0" />
       <PasswordField fx:id="passwordField" layoutX="124.0" layoutY="127.0" promptText="Password" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="124.0" />
-      <Button layoutX="174.0" layoutY="217.0" mnemonicParsing="false" onAction="#register" text="Sign up" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="174.0" />
-      <Button layoutX="174.0" layoutY="177.0" mnemonicParsing="false" onAction="#validateLogin" text="Log in" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="174.0" />
+      <Button layoutX="158.0" layoutY="217.0" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="109.0" text="Registracija" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="157.0" />
+      <Button layoutX="174.0" layoutY="177.0" mnemonicParsing="false" onAction="#validateLogin" text="Prisijungti" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="174.0" />
       <Text fill="#cd2020" layoutX="155.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ReserveIT">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Text>
+      <Button fx:id="resetPasswordB" layoutX="125.0" layoutY="258.0" mnemonicParsing="false" onAction="#resetPassword" prefHeight="25.0" prefWidth="176.0" text="Atkurti slaptažodį" />
    </children>
 </AnchorPane>

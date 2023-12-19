@@ -6,7 +6,9 @@ import com.example.kursinis.model.Session;
 import com.example.kursinis.utilities.CallEndpoints;
 import com.example.kursinis.utilities.FxUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -18,6 +20,7 @@ public class LoginPage {
     public PasswordField passwordField;
     public static Session session;
     public ObjectMapper mapper = new ObjectMapper();
+    public Button resetPasswordB;
 
     public void validateLogin() throws IOException {
 
@@ -52,4 +55,7 @@ public class LoginPage {
         return !response.equals("Invalid username or password");
     }
 
+    public void resetPassword(ActionEvent actionEvent) {
+        FxUtils.openFxPage("password-reset.fxml", loginField);
+    }
 }
