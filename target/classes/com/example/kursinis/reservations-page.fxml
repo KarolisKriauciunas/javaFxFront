@@ -23,14 +23,14 @@
           <TableColumn fx:id="pAddressColumn" prefWidth="301.0" text="Address" />
         </columns>
       </TableView>
-       <TableView fx:id="parkingSpaceList" layoutX="708.0" layoutY="295.0" onMouseClicked="#selectCargo" prefHeight="220.0" prefWidth="418.0">
+       <TableView fx:id="parkingSpaceList" layoutX="708.0" layoutY="295.0" onMouseClicked="#selectParkingSpace" prefHeight="220.0" prefWidth="418.0">
            <columns>
                <TableColumn fx:id="psStatusColumn" prefWidth="75.0" text="Status" />
                <TableColumn fx:id="psNameColumn" prefWidth="234.5560302734375" text="Name" />
                <TableColumn fx:id="psPriceColumn" prefWidth="107.0" text="Price" />
            </columns>
        </TableView>
-      <Button fx:id="createReservationButton" layoutX="749.0" layoutY="545.0" mnemonicParsing="false" onAction="#submitReservation" prefHeight="74.0" prefWidth="250.0" text="Create Reservation" />
+      <Button fx:id="createReservationButton" layoutX="749.0" layoutY="545.0" mnemonicParsing="false" onAction="#createReservation" prefHeight="74.0" prefWidth="250.0" text="Create Reservation" />
       <DatePicker fx:id="StartDateField" layoutX="25.0" layoutY="251.0" />
       <DatePicker fx:id="endDField" layoutX="25.0" layoutY="308.0" />
       <Text layoutX="25.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="58.93359375" />

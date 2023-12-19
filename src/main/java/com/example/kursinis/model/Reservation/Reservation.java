@@ -14,11 +14,9 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @JsonIgnoreProperties
 public class Reservation {
-    private Long driverId;
-    private Timestamp tripStartDate;
-    private Timestamp tripEndDate;
-    private String destination;
-    private Long tripId;
-    private Long cargoId;
-    private ReservationStatus status;
+    private Long userId;
+    private Timestamp reservationStartDate;
+    private Timestamp reservationEndDate;
+    private Long parkingSpaceId;
+    private ReservationStatus reservationStatus;
 }
