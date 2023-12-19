@@ -1,7 +1,7 @@
 package com.example.kursinis.fxControllers;
 
 import com.example.kursinis.ParcelApplication;
-import com.example.kursinis.model.Trip.Cargo;
+import com.example.kursinis.model.Reservation.ParkingLot;
 import com.example.kursinis.utilities.CallEndpoints;
 import com.example.kursinis.utilities.FxUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -25,16 +25,16 @@ import java.util.ResourceBundle;
 
 public class ParkingLotPage implements Initializable {
 
-    public TableView<Cargo> cargoTable;
-    public TableColumn<Cargo, String> idField;
-    public TableColumn<Cargo, String> valueField;
-    public TableColumn<Cargo, String> descriptionField;
+    public TableView<ParkingLot> cargoTable;
+    public TableColumn<ParkingLot, String> idField;
+    public TableColumn<ParkingLot, String> valueField;
+    public TableColumn<ParkingLot, String> descriptionField;
     public TextField submitValue;
     public TextField submitDesc;
     public TextField editValue;
     public TextField editDescr;
     public ObjectMapper mapper = new ObjectMapper();
-    public List<Cargo> cargos;
+    public List<ParkingLot> cargos;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -58,7 +58,7 @@ public class ParkingLotPage implements Initializable {
     public void getInitialCargo() {
         String response = CallEndpoints.Get("http://localhost:8080/api/v1/cargos");
         try {
-            cargos = Arrays.asList(mapper.readValue(response, Cargo[].class));
+            cargos = Arrays.asList(mapper.readValue(response, ParkingLot[].class));
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
@@ -82,7 +82,7 @@ public class ParkingLotPage implements Initializable {
     }
 
     public void updateCargo(ActionEvent actionEvent) {
-        String Url = "http://localhost:8080/api/v1/update/cargo/" +cargoTable.getSelectionModel().getSelectedItem().getId();
+        String Url = "http://localhost:8080/api/v1/update/cargo/" +cargoTable.getSelectionModel().getSelectedItem().getParkingLotId();
         Url+= "?value=" + editValue.getText();
         Url+= "&description=" + editDescr.getText().replace(" ", "%20");
         if(CallEndpoints.Put(Url, "").equals("200")) {
@@ -98,7 +98,7 @@ public class ParkingLotPage implements Initializable {
 
     @FXML
     public void rowClicked(MouseEvent event) {
-        Cargo clickedCargo = cargoTable.getSelectionModel().getSelectedItem();
+        ParkingLot clickedCargo = cargoTable.getSelectionModel().getSelectedItem();
 
         if (clickedCargo != null) {
             editValue.setText(clickedCargo.getValue().toString());
