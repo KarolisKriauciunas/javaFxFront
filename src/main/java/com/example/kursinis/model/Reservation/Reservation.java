@@ -1,5 +1,6 @@
 package com.example.kursinis.model.Reservation;
 
+import com.example.kursinis.model.City;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,4 +20,8 @@ public class Reservation {
     private Timestamp reservationEndDate;
     private Long parkingSpaceId;
     private ReservationStatus reservationStatus;
+    private float price;
+    private String parkingSpaceName;
+    private String address;
+    private City city;
 }
