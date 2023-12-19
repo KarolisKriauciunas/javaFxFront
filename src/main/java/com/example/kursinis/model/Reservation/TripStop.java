@@ -1,4 +1,4 @@
-package com.example.kursinis.model.Trip;
+package com.example.kursinis.model.Reservation;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class TripStop {
     @ManyToOne
     @JoinColumn(name = "trip_ID")
-    private Trip tripID;
+    private Reservation tripID;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long stopID;
