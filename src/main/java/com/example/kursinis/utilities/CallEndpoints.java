@@ -83,4 +83,23 @@ public class CallEndpoints {
 
         return "500";
     }
+    public static String PutWithMessage(String url, String body) {
+        try {
+            byte[] sampleData = body.getBytes();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(url))
+                    .header("Content-Type", "application/json")
+                    .PUT(HttpRequest.BodyPublishers.ofByteArray(sampleData))
+                    .build();
+            var client = HttpClient.newHttpClient();
+
+            var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+            return response.body();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return "500";
+    }
 }
