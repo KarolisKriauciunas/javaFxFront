@@ -152,7 +152,7 @@ public class ForumPage implements Initializable {
         Comment comment =  (Comment)treeView.getSelectionModel().getSelectedItem().getValue();
     }
     public void goBack(ActionEvent actionEvent) {
-        FxUtils.openFxPage("manager-main-page.fxml", nameField);
+        FxUtils.openFxPage("main-page.fxml", nameField);
     }
 
     @FXML

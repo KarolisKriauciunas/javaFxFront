@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="489.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.EditUserProfile">
+   <children>
+      <TextField fx:id="name" layoutX="17.0" layoutY="108.0" prefHeight="25.0" prefWidth="237.0" promptText="Name" />
+      <TextField fx:id="email" layoutX="17.0" layoutY="221.0" prefHeight="25.0" prefWidth="237.0" promptText="Surname" />
+      <PasswordField fx:id="password" layoutX="16.0" layoutY="284.0" prefHeight="25.0" prefWidth="237.0" promptText="Password" />
+      <Text layoutX="19.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Your Profile" textAlignment="CENTER" wrappingWidth="230.341796875">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="15.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="14.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Button layoutX="66.0" layoutY="361.0" mnemonicParsing="false" onAction="#submit" prefHeight="32.0" prefWidth="146.0" text="Save" />
+      <Button layoutX="93.0" layoutY="417.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="91.0" text="Cancel" />
+      <TextField fx:id="username" layoutX="16.0" layoutY="162.0" prefHeight="25.0" prefWidth="237.0" promptText="Username" />
+      <Text layoutX="15.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+
+\
+java:S1192_"FDefine a constant instead of duplicating this literal "Error" 3 times.(¦–
+d
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(ç ÇŠ
+k
+java:S1104"UMake firstName a static final constant or non-public and provide accessors if needed.(‰‚éõ
+o
+java:S1104"TMake lastName a static final constant or non-public and provide accessors if needed.(¾Ÿäôøÿÿÿÿ
+g
+java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(ëÜÔ–
+h
+java:S1104 "RMake salary a static final constant or non-public and provide accessors if needed.(ô€Šƒ
+m
+java:S1104!"WMake accountType a static final constant or non-public and provide accessors if needed.(ÁóÅ÷
+k
+java:S1104""UMake userTable a static final constant or non-public and provide accessors if needed.(¶•«ü
+u
+java:S1104#"ZMake firstNameField a static final constant or non-public and provide accessors if needed.(®«ŞĞùÿÿÿÿ
+t
+java:S1104$"YMake lastNameField a static final constant or non-public and provide accessors if needed.( ƒ™Ûüÿÿÿÿ
+q
+java:S1104%"VMake emailField a static final constant or non-public and provide accessors if needed.(şãÓâúÿÿÿÿ
+r
+java:S1104&"WMake salaryField a static final constant or non-public and provide accessors if needed.(ğì‰”üÿÿÿÿ
+t
+java:S1104'"YMake positionField a static final constant or non-public and provide accessors if needed.(•Áÿùÿÿÿÿ
+r
+java:S1104("WMake statusField a static final constant or non-public and provide accessors if needed.(Ê•öˆÿÿÿÿÿ
+i
+java:S1104)"SMake idField a static final constant or non-public and provide accessors if needed.(¦õ¾Û
+g
+java:S1104*"QMake users a static final constant or non-public and provide accessors if needed.(¯Á’È
+m
+java:S1104+"RMake mapper a static final constant or non-public and provide accessors if needed.(æØ²Şüÿÿÿÿ
+v
+java:S1104,"YMake usernameField a static final constant or non-public and provide accessors if needed.(Ğü¨8™õòÇ1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğ—ÂÂşÿÿÿÿ
+H
+java:S1172Y"2Remove this unused method parameter "actionEvent".(˜ùü¶
+S
+java:S1854m"8Remove this useless assignment to local variable "json".(İÙÌÙıÿÿÿÿ
+H
+java:S1172]"2Remove this unused method parameter "actionEvent".(§ÊÜ²
+D
+java:S1481m")Remove this unused "json" local variable.(İÙÌÙıÿÿÿÿ
+N
+java:S1172"2Remove this unused method parameter "actionEvent".(Ùƒ¹Õşÿÿÿÿ

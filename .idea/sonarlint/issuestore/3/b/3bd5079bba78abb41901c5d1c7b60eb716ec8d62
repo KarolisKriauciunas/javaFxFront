@@ -1,0 +1,7 @@
+
+e	java:S116"PRename this field "Value" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÇÎò
+b
+java:S1128"GRemove this unused import 'com.example.kursinis.model.Account.DtoUser'.(Á¥ñÛùÿÿÿÿ
+D
+java:S1128
+".Remove this unused import 'javax.persistence'.(¬£şç

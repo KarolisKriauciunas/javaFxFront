@@ -41,6 +41,7 @@ public class UserPage implements Initializable {
     public TextField idField;
     public List<DtoUser> users;
     public ObjectMapper mapper = new ObjectMapper();
+    public TextField usernameField;
 
     String response = CallEndpoints.Get("http://localhost:8080/users");
 
@@ -86,7 +87,7 @@ public class UserPage implements Initializable {
     }
 
     public void goBack(ActionEvent actionEvent) {
-        FxUtils.openFxPage("manager-main-page.fxml", firstNameField);
+        FxUtils.openFxPage("main-page.fxml", firstNameField);
     }
 
     public void submit(ActionEvent actionEvent) {
