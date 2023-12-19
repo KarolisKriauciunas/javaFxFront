@@ -1,10 +1,11 @@
 package com.example.kursinis.fxControllers;
 
 import com.example.kursinis.ParcelApplication;
-import com.example.kursinis.model.Account.DtoUser;
+import com.example.kursinis.model.City;
 import com.example.kursinis.model.Reservation.ParkingLot;
 import com.example.kursinis.model.Reservation.ParkingSpace;
 import com.example.kursinis.model.Reservation.Reservation;
+import com.example.kursinis.model.Reservation.ReservationStatus;
 import com.example.kursinis.utilities.CallEndpoints;
 import com.example.kursinis.utilities.FxUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -34,11 +35,11 @@ public class ReservationPage implements Initializable {
     public TableColumn<Reservation, Timestamp> rPriceColumn;
     public TableColumn<Reservation, Timestamp> rStartDColumn;
     public TableColumn<Reservation, Timestamp> rEndDColumn;
-    public List<Reservation> reservations;
+    public List<Reservation> reservationsFull;
     public TableView<ParkingLot> parkingLotsList;
     public TableColumn<ParkingLot, String> pCityColumn;
     public TableColumn<ParkingLot, String> pAddressColumn;
-    public List<ParkingLot> parkingLots;
+    public List<ParkingLot> parkingLotsFull;
 
     public TableView<ParkingSpace> parkingSpaceList;
     public TableColumn<ParkingSpace, String> psStatusColumn;
@@ -50,7 +51,8 @@ public class ReservationPage implements Initializable {
     public DatePicker endDField;
 
     public ObjectMapper mapper = new ObjectMapper();
-    public ChoiceBox carChoice;
+    //city choice needs to be values from City enum
+    public ChoiceBox<City> cityChoice;
     public Button createReservationButton;
     public TextField redirect;
 
@@ -60,18 +62,18 @@ public class ReservationPage implements Initializable {
 
 
     //fill reservation list
-    public void fillReservationList() {
-        getInitialReservations();
+    public void fillReservationList(List <Reservation> reservations) {
         rCityColumn.setCellValueFactory(new PropertyValueFactory<>("city"));
         rAddressColumn.setCellValueFactory(new PropertyValueFactory<>("address"));
         rStatusColumn.setCellValueFactory(new PropertyValueFactory<>("reservationStatus"));
         rPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
         rStartDColumn.setCellValueFactory(new PropertyValueFactory<>("reservationStartDate"));
         rEndDColumn.setCellValueFactory(new PropertyValueFactory<>("reservationEndDate"));
+
         reservationList.getItems().setAll(reservations);
     }
 
-    public void fillParkingLotsList() {
+    public void fillParkingLotsList(List <ParkingLot> parkingLots) {
         getInitialParkingLots();
         pCityColumn.setCellValueFactory(new PropertyValueFactory<>("city"));
         pAddressColumn.setCellValueFactory(new PropertyValueFactory<>("address"));
@@ -98,7 +100,7 @@ public class ReservationPage implements Initializable {
     public void getInitialParkingLots() {
         String response = CallEndpoints.Get("http://localhost:8080/api/v1/parkinglot");
         try {
-            parkingLots = Arrays.asList(mapper.readValue(response, ParkingLot[].class));
+            parkingLotsFull = Arrays.asList(mapper.readValue(response, ParkingLot[].class));
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
@@ -117,7 +119,7 @@ public class ReservationPage implements Initializable {
     public void getInitialReservations() {
         String response = CallEndpoints.Get("http://localhost:8080/api/v1/reservations");
         try {
-            reservations = Arrays.asList(mapper.readValue(response, Reservation[].class));
+            reservationsFull = Arrays.asList(mapper.readValue(response, Reservation[].class));
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
@@ -136,16 +138,23 @@ public class ReservationPage implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        getInitialReservations();
+        getInitialReservations();
+        updateReservationStatus();
         getInitialParkingLots();
-        fillReservationList();
-        fillParkingLotsList();
+        fillReservationList(getUserReservations(reservationsFull));
+        fillParkingLotsList(parkingLotsFull);
+        cityChoice.getItems().addAll(City.values());
+        cityChoice.setValue(null);
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(ParcelApplication.class.getResource("reservations-page.fxml"));
     }
-
-
-    public void submitReservation(ActionEvent actionEvent) {
+    public void choiceChanged(ActionEvent actionEvent) {
+        if(cityChoice.getValue() != null)
+        {
+            List<ParkingLot> parkingLotsFiltered = parkingLotsFull.stream().filter(p -> p.getCity().equals(cityChoice.getValue())).toList();
+            fillParkingLotsList(parkingLotsFiltered);
+            parkingSpaceList.getItems().clear();
+        }
     }
 
     public void cancelReservation(ActionEvent actionEvent) {
@@ -165,24 +174,46 @@ public void createReservation(ActionEvent actionEvent) {
     }
         if(selectedParkingSpaceId != null && StartDateField.getValue() != null && endDField.getValue() != null)
         {
+            if (!checkReservationCount(getUserReservations(reservationsFull))) {
+                FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "You already have 2 active reservations, please cancel one to create new");
+                return;
+            }
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("parkingSpaceId", selectedParkingSpaceId);
             jsonObject.put("reservationStartDate", StartDateField.getValue());
             jsonObject.put("reservationEndDate", endDField.getValue());
             jsonObject.put("userId", LoginPage.session.employeeID);
-            System.out.println(jsonObject.toString());
             String response = CallEndpoints.Post("http://localhost:8080/api/v1/reservations/create", jsonObject.toString());
             System.out.println(response);
             getInitialReservations();
-            fillReservationList();
+            updateReservationStatus();
+            reservationList.getItems().clear();
+            fillReservationList(getUserReservations(reservationsFull));
         }
         else
         {
             FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Please select parking space, parking lot and date");
         }
     }
+    public List<Reservation> getUserReservations(List<Reservation> reservations) {
+        return reservations.stream().filter(p -> p.getUserId().equals(LoginPage.session.employeeID)).toList();
+    }
+    public boolean checkReservationCount(List<Reservation> reservations) {
+        return reservations.stream().filter(p -> p.getReservationStatus().equals(ReservationStatus.UPCOMING)).count() < 2;
+    }
     public void selectParkingSpace(MouseEvent event) {
         selectedParkingSpaceId = parkingSpaceList.getSelectionModel().getSelectedItem().getParkingSpaceId();
         selectedParkingLotId = parkingSpaceList.getSelectionModel().getSelectedItem().getParkingLotId();
     }
+    public void updateReservationStatus() {
+        for (Reservation reservation : reservationsFull) {
+            if (reservation.getReservationStatus() != ReservationStatus.UPCOMING) {
+                continue;
+            }
+            if (reservation.getReservationEndDate().before(new Timestamp(System.currentTimeMillis()))) {
+                reservation.setReservationStatus(ReservationStatus.COMPLETED);
+            }
+        }
+    }
+
 }
