@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class CargoPage implements Initializable {
+public class ParkingLotPage implements Initializable {
 
     public TableView<Cargo> cargoTable;
     public TableColumn<Cargo, String> idField;

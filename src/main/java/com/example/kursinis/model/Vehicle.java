@@ -15,13 +15,9 @@ import javax.persistence.*;
 @AllArgsConstructor
 @JsonIgnoreProperties
 public class Vehicle {
-    private String manufacturer;
+    private String carName;
     private Long vehicleID;
-    private String creationYear;
-    private String Value;
-    private Long completedTrips;
-    private VehicleType type;
-    private String lastService;
+    private String plateNumbers;
     private Long assignedId;
 }
 

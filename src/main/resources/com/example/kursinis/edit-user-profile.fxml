@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="489.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.EditUserProfile">
+<AnchorPane prefHeight="489.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.EditUserProfile">
    <children>
       <TextField fx:id="name" layoutX="17.0" layoutY="108.0" prefHeight="25.0" prefWidth="237.0" promptText="Name" />
       <TextField fx:id="email" layoutX="17.0" layoutY="221.0" prefHeight="25.0" prefWidth="237.0" promptText="Surname" />

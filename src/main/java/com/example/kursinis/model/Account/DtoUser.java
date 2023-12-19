@@ -17,10 +17,9 @@ public class DtoUser {
     private String userName;
     private String firstName;
     private String lastName;
-    private String Email;
+    private String email;
     private Long employeeID;
-    private Float salary;
-    private AccountType Type;
+    private AccountType type;
 
     @Override
     public String toString() {

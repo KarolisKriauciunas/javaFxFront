@@ -9,7 +9,6 @@ public class MainPage {
 
     @FXML
     public TextField redirect;
-
     public void openReservations(ActionEvent actionEvent) {
         FxUtils.openFxPage("reservations-page.fxml", redirect);
     }
