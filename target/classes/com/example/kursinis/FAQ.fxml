@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.kursinis.FAQ"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.FAQPage">
+   <children>
+      <TextArea fx:id="text" editable="false" layoutX="21.0" layoutY="26.0" prefHeight="174.0" prefWidth="559.0" text="Kodėl negaliu pridėti dar vieno automobilio?&#10;•    Paskyra gali turėti ne daugiau kaip 2 automobilius.&#10;Koks yra maksimalus rezervavimo periodas?&#10;•    5 dienos.&#10;Koks yra maksimalus aktivių rezervacijų skaičius?&#10;•    2 rezervacijos.&#10;Kodėl nebegaliu atšaukti rezervacijos?&#10;•    Klientas negali atšaukti rezervacijos anksčiau nei 24 val. iki rezervacijos pradžios. " wrapText="true" />
+      <Button fx:id="goBackB" layoutX="274.0" layoutY="317.0" mnemonicParsing="false" onAction="#goBack" text="Atgal" />
+      <TextField fx:id="textas" editable="false" layoutX="55.0" layoutY="247.0" visible="false" />
+   </children>
 </AnchorPane>
