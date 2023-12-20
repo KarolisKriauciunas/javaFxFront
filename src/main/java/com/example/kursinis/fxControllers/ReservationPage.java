@@ -164,18 +164,18 @@ public void createReservation(ActionEvent actionEvent) {
 
     if(StartDateField.getValue().isBefore(java.time.LocalDate.now()) || endDField.getValue().isBefore(StartDateField.getValue()))
     {
-        FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Please select valid dates");
+        FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Pasirinkite galiojančias datas.");
         return;
     }
     else if(StartDateField.getValue().plusDays(5).isBefore(endDField.getValue()) || StartDateField.getValue().plusDays(1).isAfter(endDField.getValue()))
     {
-        FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Reservation can be made for 1-5 days");
+        FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Rezervuoti galima 1-5 dienas.");
         return;
     }
         if(selectedParkingSpaceId != null && StartDateField.getValue() != null && endDField.getValue() != null)
         {
             if (!checkReservationCount(getUserReservations(reservationsFull))) {
-                FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "You already have 2 active reservations, please cancel one to create new");
+                FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Jūs jau turite 2 aktyvias rezervacijas, todėl norėdami sukurti naują, turite atšaukti vieną iš jų.");
                 return;
             }
             JSONObject jsonObject = new JSONObject();
@@ -192,7 +192,7 @@ public void createReservation(ActionEvent actionEvent) {
         }
         else
         {
-            FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Please select parking space, parking lot and date");
+            FxUtils.alert(Alert.AlertType.ERROR, "Error", "Error", "Prašome pasirinkti parkavimo vietą, automobilių stovėjimo aikštelę ir datą.");
         }
     }
     public List<Reservation> getUserReservations(List<Reservation> reservations) {

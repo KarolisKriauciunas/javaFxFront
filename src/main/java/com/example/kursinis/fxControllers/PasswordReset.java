@@ -19,7 +19,13 @@ public class PasswordReset {
         }
     String email = resetEmail.getText();
         String newPassword = CallEndpoints.PutWithMessage("http://localhost:8080/reset?email=" + email, "");
+        if (newPassword.length() > 20)
+        {
+            FxUtils.alert(Alert.AlertType.ERROR, "Error", "Neteisingas el. paštas", "Paskyra nerasta");
+            return;
+        }
         FxUtils.alert(Alert.AlertType.INFORMATION,"Naujas slaptažodis", "Jusu naujas slaptažodis yra: " + newPassword, "Prisijungus pakeiskite slaptažodį");
+        resetEmail.setText(newPassword);
     }
 
     public void cancel(ActionEvent actionEvent) {

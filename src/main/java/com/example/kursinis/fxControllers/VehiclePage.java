@@ -57,7 +57,7 @@ public class VehiclePage implements Initializable {
 
     public void submitVehicle() {
         if (carNameField.getText().isBlank() || numberPlateField.getText().isBlank()) {
-            FxUtils.alert(Alert.AlertType.ERROR, "Error", "Missing fields", "Please fill all fields");
+            FxUtils.alert(Alert.AlertType.ERROR, "Error", "Trūksta laukų", "Prašome užpildyti visus laukus");
             return;
         }
         JSONObject json = new JSONObject();
@@ -68,9 +68,9 @@ public class VehiclePage implements Initializable {
         String responsetmp = CallEndpoints.Post("http://localhost:8080/api/v1/vehicle/create", json.toString());
         System.out.println(responsetmp);
         if (responsetmp.equals("200")) {
-            FxUtils.alert(Alert.AlertType.INFORMATION, "Success", "Vehicle created", "");
+            FxUtils.alert(Alert.AlertType.INFORMATION, "Pavyko", "Automobilis pridėtas", "");
         } else {
-            FxUtils.alert(Alert.AlertType.ERROR, "Error", "User already has 2 vehicles registered", "");
+            FxUtils.alert(Alert.AlertType.ERROR, "Error", "Vartotojas jau turi 2 registruotus transporto priemones", "");
         }
         response = getUserCars();
         getInitialVehicles();

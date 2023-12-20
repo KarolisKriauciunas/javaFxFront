@@ -28,9 +28,9 @@ public class RegisterPage {
                 || email.getText().isBlank()
                 || login.getText().isBlank()
                 || password.getText().isBlank()) {
-            FxUtils.alert(Alert.AlertType.WARNING, "Warning", "Missing fields", "Please fill out all fields");
+            FxUtils.alert(Alert.AlertType.WARNING, "Warning", "Trūksta laukų.", "Užpildykite visus laukus.");
         } else if (!Objects.equals(password.getText(), repeatPassword.getText())) {
-            FxUtils.alert(Alert.AlertType.WARNING, "Warning", "Passwords must match", "");
+            FxUtils.alert(Alert.AlertType.WARNING, "Warning", "Slaptažodžiai turi sutapti.", "");
         }
         else
         {
@@ -48,7 +48,7 @@ public class RegisterPage {
 
                 CallEndpoints.Post("http://localhost:8080/registration", json.toString());
 
-                FxUtils.alert(Alert.AlertType.INFORMATION, "Success", "Registration complete", "You will now we redirected to login page");
+                FxUtils.alert(Alert.AlertType.INFORMATION, "Success", "Registracija pavyko", "Dabar būsite nukreiptas į prisijungimo puslapį.");
                 FxUtils.openFxPage("login-page.fxml", login);
             }
         }
