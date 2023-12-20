@@ -6,29 +6,29 @@
 
 <AnchorPane prefHeight="524.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursinis.fxControllers.RegisterPage">
    <children>
-      <Text layoutX="45.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Form" wrappingWidth="230.341796875">
+      <Text layoutX="45.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registracija" wrappingWidth="230.341796875">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Text>
-      <Text layoutX="68.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make your reservations easy">
+      <Text layoutX="68.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rezervacijos į geresnį rytojų">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="name" layoutX="21.0" layoutY="116.0" prefHeight="25.0" prefWidth="237.0" promptText="Name" />
-      <TextField fx:id="surname" layoutX="21.0" layoutY="168.0" prefHeight="25.0" prefWidth="237.0" promptText="Surname" />
-      <Text layoutX="21.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
-      <Text layoutX="22.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
-      <Text layoutX="22.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address" />
+      <TextField fx:id="name" layoutX="21.0" layoutY="116.0" prefHeight="25.0" prefWidth="237.0" promptText="Petras" />
+      <TextField fx:id="surname" layoutX="21.0" layoutY="168.0" prefHeight="25.0" prefWidth="237.0" promptText="Petraitis" />
+      <Text layoutX="21.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vardas" />
+      <Text layoutX="22.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pavardė" />
+      <Text layoutX="22.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El. paštas" />
       <TextField fx:id="email" layoutX="21.0" layoutY="220.0" prefHeight="25.0" prefWidth="237.0" promptText="email@gmail.com" />
-      <TextField fx:id="login" layoutX="21.0" layoutY="285.0" prefHeight="25.0" prefWidth="237.0" promptText="Username" />
-      <PasswordField fx:id="password" layoutX="21.0" layoutY="335.0" prefHeight="25.0" prefWidth="237.0" promptText="Password" />
-      <PasswordField fx:id="repeatPassword" layoutX="21.0" layoutY="384.0" prefHeight="25.0" prefWidth="237.0" promptText="Repeat Password" />
-      <Text layoutX="22.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login name" />
-      <Text layoutX="22.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-      <Text layoutX="22.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat password" />
-      <Button layoutX="67.0" layoutY="431.0" mnemonicParsing="false" onAction="#submit" prefHeight="32.0" prefWidth="146.0" text="Submit Application" />
-      <Button layoutX="93.0" layoutY="479.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="91.0" text="Cancel" />
+      <TextField fx:id="login" layoutX="21.0" layoutY="285.0" prefHeight="25.0" prefWidth="237.0" promptText="Petriuks123" />
+      <PasswordField fx:id="password" layoutX="21.0" layoutY="335.0" prefHeight="25.0" prefWidth="237.0" promptText="123asdASD@@@" />
+      <PasswordField fx:id="repeatPassword" layoutX="21.0" layoutY="384.0" prefHeight="25.0" prefWidth="237.0" promptText="123asdASD@@@" />
+      <Text layoutX="22.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slapyvardis" />
+      <Text layoutX="22.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slaptažodis" />
+      <Text layoutX="22.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pakartoti slaptažodį" />
+      <Button layoutX="67.0" layoutY="431.0" mnemonicParsing="false" onAction="#submit" prefHeight="32.0" prefWidth="146.0" text="Registruotis" />
+      <Button layoutX="93.0" layoutY="479.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="91.0" text="Atgal" />
    </children>
 </AnchorPane>

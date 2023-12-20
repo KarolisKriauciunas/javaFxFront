@@ -16,6 +16,7 @@ module com.example.kursinis {
     exports com.example.kursinis.model.Forumas to com.fasterxml.jackson.databind;
     exports com.example.kursinis.model to com.fasterxml.jackson.databind;
     opens com.example.kursinis.model.Forumas to javafx.graphics, javafx.fxml, javafx.base;
+    opens com.example.kursinis.fxControllers to javafx.fxml;
     exports com.example.kursinis.fxControllers;
     opens com.example.kursinis.utilities to javafx.fxml;
     exports com.example.kursinis;
